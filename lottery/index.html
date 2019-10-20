@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="current_money">当前余额:
+            <span>222</span>
+        </h1>
+        <div class="num_box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="num_btn btn_close">开始摇奖</div>
+        <div class="rule"><strong>规则介绍</strong>
+            <ul>
+                <li>1、先选择玩法，未选号的情况下不能够[开始摇奖]</li>
+                <li>2、选择号码(x为不选)、金额后点选<strong style="background: #FFC0CB;">确定</strong>，并扣除余额</li>
+                <li>3、观察所选的号码与金额是否正确，确认无误后点选<span style="background: #ADFF2F;">[开始摇奖]</span></li>
+                <li>4、开始摇奖，祝您中奖，天天有个好心情</li>
+                <li>5、在下一次摇奖前，需要清除上一轮的投注</li>
+            </ul>
+        </div>
+        <div class="lottery_play">
+            <ul class="lottery_play_left">
+                <h3>赔率：</h3>
+                <li>两码: 95:1</li>
+                <li>三码: 950:1</li>
+                <li>直码: 9500:1</li>
+            </ul>
+            <div class="lottery_play_right">
+                <div class="lottery_play_numSelect">
+                    <select name="num1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="0">0</option>
+                        <option value="x">x</option>
+                    </select>
+                    <select name="num2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="0">0</option>
+                        <option value="x">x</option>
+                    </select>
+                    <select name="num3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="0">0</option>
+                        <option value="x">x</option>
+                    </select>
+                    <select name="num4">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="0">0</option>
+                        <option value="x">x</option>
+                    </select>
+                    <p>投注金额:
+                        <input class="lottery_play_pay"></input>
+                    </p>
+                </div>
+                <div class="lottery_play_btn">
+                    <div class="confirm ">确定</div>
+                    <div class="clear lost">清除</div>
+                </div>
+            </div>
+        </div>
+        <div class="lottery_list">
+            <table width="100%" border="0">
+                <tr>
+                    <th>投注号码</th>
+                    <th>下注金额</th>
+                    <th>开奖状态</th>
+                </tr>
+            </table>
+        </div>
+        <h2 class="lottery_response">
+
+        </h2>
+    </div>
+</body>
+<script src="./src/js/jquery-1.11.0.js"></script>
+<script src="./src/js/index.js"></script>
+
+</html>
